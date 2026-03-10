@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>XXX Letter Generator | xxx xx xxxxx Online Tool</title>
+
+<meta name="description" content="Free online xxx letter generator tool. Generate random xx and xxxxx letters instantly with this fast responsive xxx tool.">
+
+<meta name="keywords" content="xxx, xx, xxxxx, xxxxxx, xxx generator, random xxx tool, free xxx generator">
+
+<meta name="robots" content="index, follow">
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#0f172a;
+color:white;
+text-align:center;
+}
+
+header{
+background:#020617;
+padding:20px;
+}
+
+.container{
+max-width:700px;
+margin:auto;
+padding:40px 20px;
+}
+
+button{
+padding:12px 20px;
+font-size:18px;
+border:none;
+border-radius:6px;
+background:#3b82f6;
+color:white;
+cursor:pointer;
+}
+
+#result{
+margin-top:30px;
+font-size:40px;
+letter-spacing:10px;
+}
+
+article{
+max-width:700px;
+margin:auto;
+padding:20px;
+line-height:1.6;
+}
+
+@media(max-width:600px){
+
+#result{
+font-size:28px;
+}
+
+button{
+width:100%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>XXX Random Letter Generator</h1>
+<p>xxx xx xxxxx online generator tool</p>
+</header>
+
+<div class="container">
+
+<button onclick="generate()">Generate Letters</button>
+
+<div id="result">
+XXX
+</div>
+
+</div>
+
+<article>
+
+<h2>Free XXX Letter Generator</h2>
+
+<p>
+This simple <b>xxx letter generator</b> helps you create random letters instantly.
+You can generate xx or xxxxx letter combinations easily.
+</p>
+
+<p>
+The tool works on both desktop and mobile devices and is designed to be lightweight and responsive.
+</p>
+
+</article>
+
+<script>
+
+function generate(){
+
+const letters="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+let result="";
+
+for(let i=0;i<5;i++){
+
+result+=letters[Math.floor(Math.random()*letters.length)];
+
+}
+
+document.getElementById("result").innerHTML=result;
+
+}
+
+</script>
+
+</body>
+</html>
